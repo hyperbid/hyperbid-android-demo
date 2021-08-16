@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-xhdpi/sample_view.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/drawable/background_main.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/drawable/entry_button.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/drawable/entry_shape.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/drawable/entry_shape_pressed.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/layout-land/sample_view_entry.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_banner.xml" value="0.13489583333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_multiple_format_load.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_native.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_native_banner.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_native_list.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_native_splash.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_splash_ad_show_in_current.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/background_main.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/native_ad_item.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/native_list_ad_item.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/native_list_data_item.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/native_list_more_item.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/sample_view_entry.xml" value="0.12447916666666667" />
+        <entry key="app/src/main/res/layout/splash_ad_show.xml" value="0.19739583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

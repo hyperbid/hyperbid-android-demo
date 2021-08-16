@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gameanalytics.hyperbid_android_demo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+
+        android:theme="@style/Theme.Hyperbid_android_demo">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9488501426181082~6354662111" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.gameanalytics.hyperbid_android_demo.NativeAdActivity"
+            android:label="Native"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.gameanalytics.hyperbid_android_demo.RewardVideoAdActivity"
+            android:label="RewardedVideo"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.gameanalytics.hyperbid_android_demo.InterstitialAdActivity"
+            android:label="Interstitial"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.gameanalytics.hyperbid_android_demo.BannerAdActivity"
+            android:label="Banner"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name="com.gameanalytics.hyperbid_android_demo.SplashAdActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout" />
+        <activity
+            android:name="com.gameanalytics.hyperbid_android_demo.SplashAdShowActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+        <activity
+            android:name="com.gameanalytics.hyperbid_android_demo.SplashAdShowInCurrentActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+
+        <activity
+            android:name="com.gameanalytics.hyperbid_android_demo.NativeBannerActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+        <activity
+            android:name="com.gameanalytics.hyperbid_android_demo.NativeSplashActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+
+        <activity
+            android:name="com.gameanalytics.hyperbid_android_demo.NativeListActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+
+        <activity
+            android:name="com.gameanalytics.hyperbid_android_demo.MultipleFormatLoadActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+
+    </application>
+
+</manifest>

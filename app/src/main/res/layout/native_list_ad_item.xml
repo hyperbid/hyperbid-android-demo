@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2018-2020 HyperBid. All rights reserved.
+  ~ https://www.hyperbidad.com
+  ~ Licensed under the HyperBid SDK License Agreement
+  ~ https://github.com/hyperbidteam/HyperBid-Android-SDK/blob/master/LICENSE
+  ~
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_container"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+</RelativeLayout>

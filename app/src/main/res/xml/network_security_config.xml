@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2018-2020 HyperBid. All rights reserved.
+  ~ https://www.hyperbidad.com
+  ~ Licensed under the HyperBid SDK License Agreement
+  ~ https://github.com/hyperbidteam/HyperBid-Android-SDK/blob/master/LICENSE
+  ~
+  -->
+
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+
+    <!--    Only for Test-->
+<!--    <domain-config>-->
+<!--        <domain includeSubdomains="true">api.hyperbidtech.com</domain>-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="user"/>-->
+<!--        </trust-anchors>-->
+<!--    </domain-config>-->
+<!--    <domain-config>-->
+<!--        <domain includeSubdomains="true">da.hyperbidtech.com</domain>-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="user"/>-->
+<!--        </trust-anchors>-->
+<!--    </domain-config>-->
+<!--    <domain-config>-->
+<!--        <domain includeSubdomains="true">tk.hyperbidtech.com</domain>-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="user"/>-->
+<!--        </trust-anchors>-->
+<!--    </domain-config>-->
+<!--    <domain-config>-->
+<!--        <domain includeSubdomains="true">aa.birdgesdk.com</domain>-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="user"/>-->
+<!--        </trust-anchors>-->
+<!--    </domain-config>-->
+<!--    <domain-config>-->
+<!--        <domain includeSubdomains="true">hb.rayjump.com</domain>-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="user"/>-->
+<!--        </trust-anchors>-->
+<!--    </domain-config>-->
+<!--    <domain-config>-->
+<!--        <domain includeSubdomains="true">an.facebook.com</domain>-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="user"/>-->
+<!--        </trust-anchors>-->
+<!--    </domain-config>-->
+
+<!--    <debug-overrides>-->
+<!--        <trust-anchors>-->
+<!--            <certificates src="user"/>-->
+<!--        </trust-anchors>-->
+<!--    </debug-overrides>-->
+</network-security-config>

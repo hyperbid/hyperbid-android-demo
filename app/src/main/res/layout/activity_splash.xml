@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2018-2020 HyperBid. All rights reserved.
+  ~ https://www.hyperbidad.com
+  ~ Licensed under the HyperBid SDK License Agreement
+  ~ https://github.com/hyperbidteam/HyperBid-Android-SDK/blob/master/LICENSE
+  ~
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/splash_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/show_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_spinner"
+        android:text="Show Splash Ad In Other Activity" />
+
+    <Button
+        android:id="@+id/show_in_current_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/show_btn"
+        android:text="Show Splash Ad In Current Activity" />
+
+</RelativeLayout>

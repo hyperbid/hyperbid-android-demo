@@ -1,0 +1,77 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.gameanalytics.hyperbid_android_demo"
+        minSdk 28
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //HyperBid (Necessary)
+    api "com.hyperbid.sdk:core:5.7.52"
+    api "com.hyperbid.sdk:nativead:5.7.52"
+    api "com.hyperbid.sdk:banner:5.7.52"
+    api "com.hyperbid.sdk:interstitial:5.7.52"
+    api "com.hyperbid.sdk:rewardedvideo:5.7.52"
+    api "com.hyperbid.sdk:splash:5.7.52"
+
+    //Facebook
+    api "com.hyperbid.sdk:adapter-facebook:5.7.52"
+    api "com.facebook.android:audience-network-sdk:6.4.0"
+    api "androidx.annotation:annotation:1.0.0"
+    api "androidx.recyclerview:recyclerview:1.0.0"
+
+    //Vungle
+    api "com.hyperbid.sdk:adapter-vungle:5.7.52"
+    api "com.vungle:publisher-sdk-android:6.10.1"
+    api "androidx.core:core:1.3.2"
+    api "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
+    api "com.google.android.gms:play-services-basement:17.5.0"
+    api "com.google.android.gms:play-services-ads-identifier:17.0.0"
+
+    //AdColony
+    api "com.hyperbid.sdk:adapter-adcolony:5.7.52"
+    api "com.adcolony:sdk:4.5.0"
+    api "com.google.android.gms:play-services-ads-identifier:17.0.0"
+
+    //Ironsource
+    api "com.hyperbid.sdk:adapter-ironsource:5.7.52"
+    api "com.ironsource.sdk:mediationsdk:7.1.5.1"
+    api "com.google.android.gms:play-services-ads-identifier:17.0.0"
+    api "com.google.android.gms:play-services-basement:17.1.1"
+
+    //Admob
+    api "com.hyperbid.sdk:adapter-admob:5.7.53"
+    api "com.google.android.gms:play-services-ads:20.1.0"
+}

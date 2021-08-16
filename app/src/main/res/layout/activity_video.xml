@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright © 2018-2020 HyperBid. All rights reserved.
+  ~ https://www.hyperbidad.com
+  ~ Licensed under the HyperBid SDK License Agreement
+  ~ https://github.com/hyperbidteam/HyperBid-Android-SDK/blob/master/LICENSE
+  ~
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/placementSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <RadioGroup
+            android:id="@+id/placement_select_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"></RadioGroup>
+
+        <Button
+            android:id="@+id/loadAd_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load Video Ad" />
+
+        <Button
+            android:id="@+id/is_ad_ready_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Is Video Ad Ready" />
+
+        <Button
+            android:id="@+id/show_ad_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Video Ad" />
+
+
+    </LinearLayout>
+</ScrollView>

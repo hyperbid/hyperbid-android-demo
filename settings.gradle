@@ -1,0 +1,25 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+
+        //HyperBid(Core)
+        maven {
+            url "https://hyperbid.jfrog.io/artifactory/sdk"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+    }
+}
+rootProject.name = "hyperbid_android_demo"
+include ':app'
