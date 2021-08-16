@@ -65,15 +65,14 @@ public class MainActivity extends AppCompatActivity {
             RewardVideoAdActivity.class,
             SplashAdActivity.class,
             NativeAdActivity.class,
-            SplashAdActivity.class,
-            NativeAdActivity.class,
             NativeBannerActivity.class,
+            NativeSplashActivity.class,
             NativeListActivity.class,
             MultipleFormatLoadActivity.class
     };
 
-    boolean _hasHyperBidInitialized = false;
-    boolean _hasGdprBeenAccepted    = false;
+    boolean _hasHyperBidInitialized = false; //
+    boolean _hasGdprBeenAccepted    = false; // will hold the value
 
     protected void setDataDirectory() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
@@ -84,11 +83,16 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /*
+    * for EU users it is necessary to handle GDPR
+    * HyperBid provides functions to facilitate this
+     */
     protected void askGdpr() {
         HBSDK.checkTraffic(this, new NetTrafficeCallback() {
             @Override
             public void onResultCallback(boolean isEU) {
                 if (isEU && HBSDK.getGDPRLevel(MainActivity.this) == HBSDK.UNKNOWN) {
+                    // displays the GDPR prompt that the users needs to agree to -> either personalized or non-personalized
                     HBSDK.showGDPRPage(MainActivity.this);
                 }
 
@@ -104,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //  converts the gdpr policy to a string that can be shown in the app
     protected String getGDPRString(int code) {
         switch(code) {
             case HBSDK.PERSONALIZED:
@@ -115,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    // creates a dialog with extra information on the current HyberBid implementation in the app
     protected void showDetailsDialog() {
         String message = new String();
         message += "HyperBid Status: " + (_hasHyperBidInitialized ? "Active" : "Inactive") + '\n';
@@ -133,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
+    // handles HyperBid initializations including GDPR for EU users
     protected void initializeHyperbid() {
         setDataDirectory();
         HBSDK.setLogDebug(true);
@@ -142,11 +149,14 @@ public class MainActivity extends AppCompatActivity {
 
         HBSDK.setAppChannel(_appChannel);
         HBSDK.setAppSubChannel(_appSubChannel);
+
+        // in order to initialize HyperBid it is required to use the id & key from the HyperBid dashboard
         HBSDK.start(getApplicationContext(), _appid, _appKey);
 
         _hasHyperBidInitialized = true;
     }
 
+    // creates a menu with all the samples for HyperBid
     protected void createEntries() {
         SampleListAdapter listAdapter = new SampleListAdapter(this, _names);
 
