@@ -9,7 +9,8 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
 
     <Spinner
         android:id="@+id/banner_spinner"
@@ -23,6 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/banner_spinner"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
         android:text="Banner Load Ad" />
 
 
@@ -32,7 +35,5 @@
         android:layout_height="300dp"
         android:layout_below="@id/loadAd_btn"
         android:layout_marginTop="10dp"></FrameLayout>
-
-
 
 </RelativeLayout>
