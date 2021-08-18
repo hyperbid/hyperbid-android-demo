@@ -10,6 +10,22 @@ dependencyResolutionManagement {
             url "https://hyperbid.jfrog.io/artifactory/sdk"
         }
 
+        //Nend
+        maven {
+            url "http://fan-adn.github.io/nendSDK-Android-lib/library"
+            allowInsecureProtocol = true
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
         //Vungle
         maven {
             url "https://s01.oss.sonatype.org/content/groups/staging/"
@@ -19,6 +35,696 @@ dependencyResolutionManagement {
         maven {
             url "https://android-sdk.is.com/"
         }
+
+        //Nend
+        maven {
+            url "http://fan-adn.github.io/nendSDK-Android-lib/library"
+            allowInsecureProtocol = true
+        }
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        //Nend
+        maven {
+            url "http://fan-adn.github.io/nendSDK-Android-lib/library"
+            allowInsecureProtocol = true
+        }
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        //Nend
+        maven {
+            url "http://fan-adn.github.io/nendSDK-Android-lib/library"
+            allowInsecureProtocol = true
+        }
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
+        //Mintegral
+        maven {
+            url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea"
+        }
+
+        //Tapjoy
+        maven {
+            url "https://sdk.tapjoy.com/"
+        }
+
+        //Vungle
+        maven {
+            url "https://s01.oss.sonatype.org/content/groups/staging/"
+        }
+
+        //Ironsource
+        maven {
+            url "https://android-sdk.is.com/"
+        }
+
+        //Maio
+        maven {
+            url "https://imobile-maio.github.io/maven"
+        }
+
+        //Ogury
+        maven {
+            url "https://maven.ogury.co"
+        }
+
+        //Huawei
+        maven {
+            url "https://developer.huawei.com/repo/"
+        }
+
     }
 }
 rootProject.name = "hyperbid_android_demo"
