@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">hyperbid_android_demo</string>
+    <string name="already_init_title">Warning</string>
+    <string name="already_init_message">"HyperBid was already initialized!"</string>
+    <string name="gdpr_personalized">personalized</string>
+    <string name="gdpr_nonpersonalized">non personalized</string>
 </resources>
