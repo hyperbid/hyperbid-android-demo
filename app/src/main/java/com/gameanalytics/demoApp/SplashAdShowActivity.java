@@ -5,7 +5,7 @@
  * https://github.com/hyperbidteam/HyperBid-Android-SDK/blob/master/LICENSE
  */
 
-package com.gameanalytics.hyperbid_android_demo;
+package com.gameanalytics.demoApp;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;

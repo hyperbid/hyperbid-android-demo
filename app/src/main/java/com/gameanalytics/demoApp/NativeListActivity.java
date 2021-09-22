@@ -6,7 +6,7 @@
  *
  */
 
-package com.gameanalytics.hyperbid_android_demo;
+package com.gameanalytics.demoApp;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -46,17 +46,6 @@ public class NativeListActivity extends Activity {
     private boolean isLoadSuccessful;
     private int firstCompletelyVisibleItemPosition = -1;
     private int lastCompletelyVisibleItemPosition = -1;
-
-    String unitIds[] = new String[]{
-//            DemoApplicaion.mPlacementId_native_admob
-//            DemoApplicaion.mPlacementId_native_all
-            DemoApplication.mPlacementId_native_mintegral
-//            , DemoApplicaion.mPlacementId_native_GDT
-//            , DemoApplicaion.mPlacementId_native_toutiao
-//            , DemoApplicaion.mPlacementId_native_toutiao_drawer
-//            , DemoApplicaion.mPlacementId_native_baidu
-
-    };
 
     private int adViewWidth;
     private int adViewHeight;
@@ -135,7 +124,6 @@ public class NativeListActivity extends Activity {
             data.add("Data: " + ((mPage * mDataCountInPerPage) + i));
         }
         return data;
-
     }
 
     @Override
@@ -197,7 +185,7 @@ public class NativeListActivity extends Activity {
 
     private void loadAd() {
         if (mHBNative == null) {
-            mHBNative = new HBNative(this, unitIds[0], new HBNativeNetworkListener() {
+            mHBNative = new HBNative(this, PlacementId.BANNER_AD_ID, new HBNativeNetworkListener() {
                 @Override
                 public void onNativeAdLoaded() {
                     isLoadingAd = false;

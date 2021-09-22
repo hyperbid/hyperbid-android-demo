@@ -1,4 +1,4 @@
-package com.gameanalytics.hyperbid_android_demo;
+package com.gameanalytics.demoApp;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -47,10 +47,10 @@ public class MultipleFormatLoadActivity extends Activity {
     private HBNativeAdView mHBNativeAdView;
     private NativeDemoRender upArpuRender;
 
-    private String mNativePlacementId = DemoApplication.mPlacementId_native_admob;
-    private String mBannerPlacementId = DemoApplication.mPLacementId_banner_kidoz;
-    private String mRewardVideoPlacementId = DemoApplication.mPlacementId_rewardvideo_kidoz;
-    private String mInterstitialPlacementId = DemoApplication.mPlacementId_interstitial_kidoz;
+    private String mNativePlacementId = PlacementId.NATIVE_BANNER_ID;
+    private String mBannerPlacementId = PlacementId.BANNER_AD_ID;
+    private String mRewardVideoPlacementId = PlacementId.REWARDED_VIDEO_ID;
+    private String mInterstitialPlacementId = PlacementId.INTERSTITIAL_AD_ID;
 
     private boolean mNeedLoadRewardVideo = true;
     private boolean mNeedLoadInterstitial = true;
@@ -111,7 +111,7 @@ public class MultipleFormatLoadActivity extends Activity {
                     FrameLayout.LayoutParams layoutParams = new FrameLayout.LayoutParams(CommonUtil.dip2px(MultipleFormatLoadActivity.this, 20), CommonUtil.dip2px(MultipleFormatLoadActivity.this, 8));
                     layoutParams.gravity = Gravity.TOP | Gravity.RIGHT;
 
-                    nativeAd.prepare(mHBNativeAdView, null, layoutParams); //可用于测试是否正常
+                    nativeAd.prepare(mHBNativeAdView, null, layoutParams);
                 } else {
                     Log.i(TAG, "onClick: this placement no cache! ");
                     Toast.makeText(MultipleFormatLoadActivity.this, "this placement no cache!", Toast.LENGTH_LONG).show();

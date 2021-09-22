@@ -5,7 +5,7 @@
  * https://github.com/hyperbidteam/HyperBid-Android-SDK/blob/master/LICENSE
  */
 
-package com.gameanalytics.hyperbid_android_demo;
+package com.gameanalytics.demoApp;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -37,50 +37,7 @@ public class NativeAdActivity extends Activity {
 
     private static final String TAG = NativeAdActivity.class.getSimpleName();
 
-    String placementIds[] = new String[]{
-            DemoApplication.mPlacementId_native_all
-            , DemoApplication.mPlacementId_native_admob
-            , DemoApplication.mPlacementId_native_adx
-            , DemoApplication.mPlacementId_native_applovin
-            , DemoApplication.mPlacementId_native_appnext
-            , DemoApplication.mPlacementId_native_facebook
-            , DemoApplication.mPlacementId_native_banner_facebook
-            , DemoApplication.mPlacementId_native_googleAdManager
-            , DemoApplication.mPlacementId_native_huawei
-            , DemoApplication.mPlacementId_native_inmobi
-            , DemoApplication.mPlacementId_native_mintegral
-            , DemoApplication.mPLacementId_native_automatic_rending_mintegral
-            , DemoApplication.mPlacementId_native_mopub
-            , DemoApplication.mPlacementId_native_myoffer
-            , DemoApplication.mPlacementId_native_nend
-            , DemoApplication.mPlacementId_native_online
-            , DemoApplication.mPlacementId_native_toutiao
-            , DemoApplication.mPlacementId_native_toutiao_drawer
-
-    };
-
-    String unitGroupName[] = new String[]{
-            "All network",
-            "Admob",
-            "Adx",
-            "Applovin",
-            "Appnext",
-            "Facebook",
-            "Faceboon native banner",
-            "Google Ad Manager",
-            "Huawei",
-            "Inmobi",
-            "Mintegral",
-            "Mintegral auto-rending",
-            "Mopub",
-            "MyOffer",
-            "Nend",
-            "OnlineApi",
-            "Pangle Feed",
-            "Pangle Draw"
-    };
-
-    HBNative atNatives[] = new HBNative[placementIds.length];
+    HBNative atNative;
     HBNativeAdView hyperbidNativeAdView;
     NativeAd mNativeAd;
 
@@ -92,43 +49,21 @@ public class NativeAdActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         setContentView(R.layout.activity_native);
 
         Spinner spinner = (Spinner) findViewById(R.id.native_spinner);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                NativeAdActivity.this, android.R.layout.simple_spinner_dropdown_item,
-                unitGroupName);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view,
-                                       int position, long id) {
-                Toast.makeText(NativeAdActivity.this,
-                        parent.getItemAtPosition(position).toString(),
-                        Toast.LENGTH_SHORT).show();
-                mCurrentSelectIndex = position;
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-            }
-        });
-
         initCloseView();
 
-        int padding = dip2px(10);
-        final int containerHeight = dip2px(340);
+        int padding = CommonUtil.dip2px(this, 10);
+        final int containerHeight = CommonUtil.dip2px(this, 340);
         final int adViewWidth = getResources().getDisplayMetrics().widthPixels - 2 * padding;
         final int adViewHeight = containerHeight - 2 * padding;
 
         final NativeDemoRender hyperbidRender = new NativeDemoRender(this);
         hyperbidRender.setCloseView(mCloseView);
 
-        for (int i = 0; i < placementIds.length; i++) {
-            atNatives[i] = new HBNative(this, placementIds[i], new HBNativeNetworkListener() {
+        atNative = new HBNative(this, PlacementId.NATIVE_BANNER_ID, new HBNativeNetworkListener() {
                 @Override
                 public void onNativeAdLoaded() {
                     Log.i(TAG, "onNativeAdLoaded");
@@ -144,9 +79,8 @@ public class NativeAdActivity extends Activity {
                 }
             });
 
-            if (hyperbidNativeAdView == null) {
-                hyperbidNativeAdView = new HBNativeAdView(this);
-            }
+        if (hyperbidNativeAdView == null) {
+            hyperbidNativeAdView = new HBNativeAdView(this);
         }
 
 
@@ -168,16 +102,15 @@ public class NativeAdActivity extends Activity {
                 localMap.put(HBAdConst.KEY.AD_WIDTH, adViewWidth);
                 localMap.put(HBAdConst.KEY.AD_HEIGHT, adViewHeight);
 
-                atNatives[mCurrentSelectIndex].setLocalExtra(localMap);
-
-                atNatives[mCurrentSelectIndex].loadAd();
+                atNative.setLocalExtra(localMap);
+                atNative.loadAd();
             }
         });
 
         findViewById(R.id.loadcache_ad_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NativeAd nativeAd = atNatives[mCurrentSelectIndex].getAd();
+                NativeAd nativeAd = atNative.getAd();
                 if (nativeAd != null) {
 
                     if (hyperbidNativeAdView != null) {
@@ -296,10 +229,5 @@ public class NativeAdActivity extends Activity {
             mNativeAd.onResume();
         }
         super.onResume();
-    }
-
-    public int dip2px(float dipValue) {
-        float scale = this.getResources().getDisplayMetrics().density;
-        return (int) (dipValue * scale + 0.5f);
     }
 }

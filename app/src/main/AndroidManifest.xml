@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gameanalytics.hyperbid_android_demo">
+    package="com.gameanalytics.demoApp">
 
     <application
         android:allowBackup="true"
@@ -20,7 +20,7 @@
             android:required="false" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.gameanalytics.demoApp.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,52 +30,494 @@
         </activity>
 
         <activity
-            android:name="com.gameanalytics.hyperbid_android_demo.NativeAdActivity"
+            android:name="com.gameanalytics.demoApp.NativeAdActivity"
             android:label="Native"
             android:launchMode="singleTask" />
         <activity
-            android:name="com.gameanalytics.hyperbid_android_demo.RewardVideoAdActivity"
+            android:name="com.gameanalytics.demoApp.RewardVideoAdActivity"
             android:label="RewardedVideo"
             android:launchMode="singleTask" />
         <activity
-            android:name="com.gameanalytics.hyperbid_android_demo.InterstitialAdActivity"
+            android:name="com.gameanalytics.demoApp.InterstitialAdActivity"
             android:label="Interstitial"
             android:launchMode="singleTask" />
         <activity
-            android:name="com.gameanalytics.hyperbid_android_demo.BannerAdActivity"
+            android:name="com.gameanalytics.demoApp.BannerAdActivity"
             android:label="Banner"
             android:launchMode="singleTask" />
 
         <activity
-            android:name="com.gameanalytics.hyperbid_android_demo.SplashAdActivity"
+            android:name="com.gameanalytics.demoApp.SplashAdActivity"
             android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout" />
         <activity
-            android:name="com.gameanalytics.hyperbid_android_demo.SplashAdShowActivity"
+            android:name="com.gameanalytics.demoApp.SplashAdShowActivity"
             android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
         <activity
-            android:name="com.gameanalytics.hyperbid_android_demo.SplashAdShowInCurrentActivity"
+            android:name="com.gameanalytics.demoApp.SplashAdShowInCurrentActivity"
             android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
 
         <activity
-            android:name="com.gameanalytics.hyperbid_android_demo.NativeBannerActivity"
+            android:name="com.gameanalytics.demoApp.NativeBannerActivity"
             android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
         <activity
-            android:name="com.gameanalytics.hyperbid_android_demo.NativeSplashActivity"
+            android:name="com.gameanalytics.demoApp.NativeSplashActivity"
             android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
 
         <activity
-            android:name="com.gameanalytics.hyperbid_android_demo.NativeListActivity"
+            android:name="com.gameanalytics.demoApp.NativeListActivity"
             android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
 
         <activity
-            android:name="com.gameanalytics.hyperbid_android_demo.MultipleFormatLoadActivity"
+            android:name="com.gameanalytics.demoApp.MultipleFormatLoadActivity"
             android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
             android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+        <activity
+            android:name="com.tapjoy.TJAdUnitActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.tapjoy.TJContentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:hardwareAccelerated="true" />
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
+
+        <!-- source file: nonchina_jcenter/network_sdk/admob/AndroidManifest.xml -->
+        <!--google-->
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <!-- source file: nonchina_jcenter/network_sdk/mopub/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/tapjoy/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/vungle/AndroidManifest.xml -->
+
+        <!-- source file: nonchina_jcenter/network_sdk/pangle/AndroidManifest.xml -->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <!-- source file: nonchina_jcenter/network_sdk/inmobi/AndroidManifest.xml -->
+        <!--android:networkSecurityConfig="@xml/network_security_config"-->
+
+        <!-- source file: nonchina_jcenter/network_sdk/fyber/AndroidManifest.xml -->
+
 
     </application>
 

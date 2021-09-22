@@ -5,7 +5,7 @@
  * https://github.com/hyperbidteam/HyperBid-Android-SDK/blob/master/LICENSE
  */
 
-package com.gameanalytics.hyperbid_android_demo;
+package com.gameanalytics.demoApp;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -29,67 +29,6 @@ import java.util.Map;
 public class RewardVideoAdActivity extends Activity {
 
     private static final String TAG = RewardVideoAdActivity.class.getSimpleName();
-
-    String placementIds[] = new String[]{
-            DemoApplication.mPlacementId_rewardvideo_all
-            , DemoApplication.mPlacementId_rewardvideo_adcolony
-            , DemoApplication.mPlacementId_rewardvideo_admob
-            , DemoApplication.mPlacementId_rewardvideo_adx
-            , DemoApplication.mPlacementId_rewardvideo_applovin
-            , DemoApplication.mPlacementId_rewardvideo_appnext
-            , DemoApplication.mPlacementId_rewardvideo_CHARTBOOST
-            , DemoApplication.mPlacementId_rewardvideo_facebook
-            , DemoApplication.mPlacementId_rewardvideo_fyber
-            , DemoApplication.mPlacementId_rewardvideo_googleAdManager
-            , DemoApplication.mPlacementId_rewardvideo_huawei
-            , DemoApplication.mPlacementId_rewardvideo_inmobi
-            , DemoApplication.mPlacementId_rewardvideo_IRONSOURCE
-            , DemoApplication.mPlacementId_rewardvideo_kidoz
-            , DemoApplication.mPlacementId_rewardvideo_maio
-            , DemoApplication.mPlacementId_rewardvideo_mintegral
-            , DemoApplication.mPlacementId_rewardvideo_mopub
-            , DemoApplication.mPlacementId_rewardvideo_myoffer
-            , DemoApplication.mPlacementId_rewardvideo_mytarget
-            , DemoApplication.mPlacementId_rewardvideo_nend
-            , DemoApplication.mPlacementId_rewardvideo_ogury
-            , DemoApplication.mPlacementId_rewardvideo_online
-            , DemoApplication.mPlacementId_rewardvideo_toutiao
-            , DemoApplication.mPlacementId_rewardvideo_startapp
-            , DemoApplication.mPlacementId_rewardvideo_TAPJOY
-            , DemoApplication.mPlacementId_rewardvideo_UNITYAD
-            , DemoApplication.mPlacementId_rewardvideo_vungle
-    };
-
-    String unitGroupName[] = new String[]{
-            "All network",
-            "Adcolony",
-            "Admob",
-            "Adx",
-            "Applovin",
-            "Appnext",
-            "Chartboost",
-            "Facebook",
-            "Fyber",
-            "Google Ad Manager",
-            "Huawei",
-            "Inmobi",
-            "Ironsource",
-            "Kidoz",
-            "Maio",
-            "Mintegral",
-            "Mopub",
-            "Myoffer",
-            "MyTarget",
-            "Nend",
-            "Ogury",
-            "OnlineApi",
-            "Pangle",
-            "StartApp",
-            "Tapjoy",
-            "Unity3d",
-            "Vungle"
-    };
-
     int mCurrentSelectIndex;
 
     HBRewardVideoAd mRewardVideoAd;
@@ -98,29 +37,6 @@ public class RewardVideoAdActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
-
-        Spinner spinner = findViewById(R.id.placementSpinner);
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                RewardVideoAdActivity.this, android.R.layout.simple_spinner_dropdown_item,
-                unitGroupName);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view,
-                                       int position, long id) {
-                Toast.makeText(RewardVideoAdActivity.this,
-                        parent.getItemAtPosition(position).toString(),
-                        Toast.LENGTH_SHORT).show();
-                mCurrentSelectIndex = position;
-                init();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-            }
-        });
 
         init();
 
@@ -150,7 +66,7 @@ public class RewardVideoAdActivity extends Activity {
 
 
     private void init() {
-        mRewardVideoAd = new HBRewardVideoAd(this, placementIds[mCurrentSelectIndex]);
+        mRewardVideoAd = new HBRewardVideoAd(this, PlacementId.REWARDED_VIDEO_ID);
         String userid = "test_userid_001";
         String userdata = "test_userdata_001";
         Map<String, Object> localMap = new HashMap<>();

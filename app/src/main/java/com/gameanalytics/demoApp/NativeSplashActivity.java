@@ -6,7 +6,7 @@
  *
  */
 
-package com.gameanalytics.hyperbid_android_demo;
+package com.gameanalytics.demoApp;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -29,7 +29,7 @@ public class NativeSplashActivity extends Activity {
         setContentView(R.layout.activity_native_splash);
         FrameLayout splashView = findViewById(R.id.native_splash_view);
         Map<String, Object> localMap = new HashMap<>();
-        HBNativeSplash splash = new HBNativeSplash(this, splashView, null, DemoApplication.mPlacementId_native_all, localMap, new HBNativeSplashListener() {
+        HBNativeSplash splash = new HBNativeSplash(this, splashView, null, PlacementId.NATIVE_SPLASH_ID, localMap, new HBNativeSplashListener() {
             @Override
             public void onAdLoaded() {
                 Log.i("SplashActivity", "Develop callback loaded");

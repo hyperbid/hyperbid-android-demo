@@ -5,7 +5,7 @@
  * https://github.com/hyperbidteam/HyperBid-Android-SDK/blob/master/LICENSE
  */
 
-package com.gameanalytics.hyperbid_android_demo;
+package com.gameanalytics.demoApp;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -26,71 +26,6 @@ public class InterstitialAdActivity extends Activity {
 
     private static final String TAG = InterstitialAdActivity.class.getSimpleName();
 
-    String placementIds[] = new String[]{
-            DemoApplication.mPlacementId_interstitial_all
-            , DemoApplication.mPlacementId_interstitial_adcolony
-            , DemoApplication.mPlacementId_interstitial_admob
-            , DemoApplication.mPlacementId_interstitial_adx
-            , DemoApplication.mPlacementId_interstitial_applovin
-            , DemoApplication.mPlacementId_interstitial_appnext
-            , DemoApplication.mPlacementId_interstitial_CHARTBOOST
-            , DemoApplication.mPlacementId_interstitial_facebook
-            , DemoApplication.mPlacementId_interstitial_fyber
-            , DemoApplication.mPlacementId_interstitial_googleAdManager
-            , DemoApplication.mPlacementId_interstitial_huawei
-            , DemoApplication.mPlacementId_interstitial_inmobi
-            , DemoApplication.mPlacementId_interstitial_IRONSOURCE
-            , DemoApplication.mPlacementId_interstitial_kidoz
-            , DemoApplication.mPlacementId_interstitial_mintegral
-            , DemoApplication.mPlacementId_interstitial_video_mintegral
-            , DemoApplication.mPlacementId_interstitia_maio
-            , DemoApplication.mPlacementId_interstitial_mopub
-            , DemoApplication.mPlacementId_interstitial_myoffer
-            , DemoApplication.mPlacementId_interstitial_mytarget
-            , DemoApplication.mPlacementId_interstitial_nend
-            , DemoApplication.mPlacementId_interstitial_ogury
-            , DemoApplication.mPlacementId_interstitial_online
-            , DemoApplication.mPlacementId_interstitial_toutiao
-            , DemoApplication.mPlacementId_interstitial_toutiao_video
-            , DemoApplication.mPlacementId_interstitia_startapp
-            , DemoApplication.mPlacementId_interstitial_TAPJOY
-            , DemoApplication.mPlacementId_interstitial_UNITYAD
-            , DemoApplication.mPlacementId_interstitial_vungle
-    };
-
-    String unitGroupName[] = new String[]{
-            "All network",
-            "Adcolony",
-            "Admob",
-            "Adx",
-            "Applovin",
-            "Appnext",
-            "Chartboost",
-            "Facebook",
-            "Fyber",
-            "Google Ad Manager",
-            "Huawei",
-            "Inmobi",
-            "Ironsource",
-            "Kidoz",
-            "Maio",
-            "Mintegral",
-            "Mintegral video",
-            "Mopub",
-            "Myoffer",
-            "MyTarget",
-            "Nend",
-            "Ogury",
-            "OnlineApi",
-            "Pangle",
-            "Pangle FullVideo",
-            "Startapp",
-            "Tapjoy",
-            "Unity3d",
-            "Vungle"
-    };
-
-
     HBInterstitial mInterstitialAd;
     int mCurrentSelectIndex;
 
@@ -98,29 +33,6 @@ public class InterstitialAdActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
-
-        Spinner spinner = findViewById(R.id.placementSpinner);
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                InterstitialAdActivity.this, android.R.layout.simple_spinner_dropdown_item,
-                unitGroupName);
-        spinner.setAdapter(adapter);
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view,
-                                       int position, long id) {
-                Toast.makeText(InterstitialAdActivity.this,
-                        parent.getItemAtPosition(position).toString(),
-                        Toast.LENGTH_SHORT).show();
-                mCurrentSelectIndex = position;
-                init();
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-            }
-        });
 
         init();
 
@@ -148,9 +60,8 @@ public class InterstitialAdActivity extends Activity {
 
     }
 
-
     private void init() {
-        mInterstitialAd = new HBInterstitial(this, placementIds[mCurrentSelectIndex]);
+        mInterstitialAd = new HBInterstitial(this, PlacementId.INTERSTITIAL_AD_ID);
         mInterstitialAd.setAdListener(new HBInterstitialExListener() {
 
             @Override

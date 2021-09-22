@@ -6,10 +6,9 @@
  *
  */
 
-package com.gameanalytics.hyperbid_android_demo;
+package com.gameanalytics.demoApp;
 
 import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -37,14 +36,13 @@ public class NativeBannerActivity extends Activity {
         final HBNativeBannerView bannerView = new HBNativeBannerView(this);
         HBNativeBannerConfig config640 = new HBNativeBannerConfig();
         config640.bannerSize = HBNativeBannerSize.BANNER_SIZE_640x150;
-//        config640.backgroupResId = R.drawable.uparpu_test_bg;
         config640.ctaBgColor = 0xff000000;
         bannerView.setBannerConfig(config640);
 
-        bannerView.setUnitId(DemoApplication.mPlacementId_native_all);
+        bannerView.setUnitId(PlacementId.NATIVE_BANNER_ID);
         bannerView.setVisibility(View.GONE);
-        LinearLayout.LayoutParams params640 = new LinearLayout.LayoutParams(dip2px(this, 360), dip2px(this, 75));
-        params640.topMargin = dip2px(this, 10);
+        LinearLayout.LayoutParams params640 = new LinearLayout.LayoutParams(CommonUtil.dip2px(this, 360), CommonUtil.dip2px(this, 75));
+        params640.topMargin = CommonUtil.dip2px(this, 10);
         bannerView.setBackgroundColor(0xffffffff);
         frameLayout.addView(bannerView, params640);
         bannerView.setAdListener(new HBNativeBannerListener() {
@@ -52,7 +50,6 @@ public class NativeBannerActivity extends Activity {
             public void onAdLoaded() {
                 Log.i("BannerActivity", "640---onAdLoaded----");
                 bannerView.setVisibility(View.VISIBLE);
-
             }
 
             @Override
@@ -93,11 +90,11 @@ public class NativeBannerActivity extends Activity {
         config320.ctaBgColor = 0xff000000;
         bannerView320.setBannerConfig(config320);
 
-        bannerView320.setUnitId(DemoApplication.mPlacementId_native_admob);
+        bannerView320.setUnitId(PlacementId.NATIVE_BANNER_ID);
         bannerView320.setVisibility(View.GONE);
         bannerView320.setBackgroundColor(0xffffffff);
-        LinearLayout.LayoutParams params320 = new LinearLayout.LayoutParams(dip2px(this, 320), dip2px(this, 50));
-        params320.topMargin = dip2px(this, 10);
+        LinearLayout.LayoutParams params320 = new LinearLayout.LayoutParams(CommonUtil.dip2px(this, 320), CommonUtil.dip2px(this, 50));
+        params320.topMargin = CommonUtil.dip2px(this, 10);
         frameLayout.addView(bannerView320, params320);
 
         bannerView320.setAdListener(new HBNativeBannerListener() {
@@ -141,7 +138,7 @@ public class NativeBannerActivity extends Activity {
 
 
         final HBNativeBannerView bannerViewAuto = new HBNativeBannerView(this);
-        bannerViewAuto.setUnitId(DemoApplication.mPlacementId_native_facebook);
+        bannerViewAuto.setUnitId(PlacementId.NATIVE_BANNER_ID);
         bannerViewAuto.setVisibility(View.GONE);
         HBNativeBannerConfig configAuto = new HBNativeBannerConfig();
         configAuto.bannerSize = HBNativeBannerSize.BANNER_SIZE_AUTO;
@@ -154,8 +151,8 @@ public class NativeBannerActivity extends Activity {
         bannerViewAuto.setLocalExtra(localMapAuto);
 
         bannerViewAuto.setBackgroundColor(0xffffffff);
-        LinearLayout.LayoutParams paramsAuto = new LinearLayout.LayoutParams(dip2px(getApplicationContext(), 320), dip2px(getApplicationContext(), 205));
-        paramsAuto.topMargin = dip2px(getApplicationContext(), 10);
+        LinearLayout.LayoutParams paramsAuto = new LinearLayout.LayoutParams(CommonUtil.dip2px(getApplicationContext(), 320), CommonUtil.dip2px(getApplicationContext(), 205));
+        paramsAuto.topMargin = CommonUtil.dip2px(getApplicationContext(), 10);
         frameLayout.addView(bannerViewAuto, paramsAuto);
 
         bannerViewAuto.setAdListener(new HBNativeBannerListener() {
@@ -217,10 +214,5 @@ public class NativeBannerActivity extends Activity {
         });
 
 
-    }
-
-    public int dip2px(Context context, float dipValue) {
-        float scale = context.getResources().getDisplayMetrics().density;
-        return (int) (dipValue * scale + 0.5f);
     }
 }

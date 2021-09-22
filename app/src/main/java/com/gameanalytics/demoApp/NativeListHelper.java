@@ -6,9 +6,7 @@
  *
  */
 
-package com.gameanalytics.hyperbid_android_demo;
-
-import android.util.Log;
+package com.gameanalytics.demoApp;
 
 import com.hyperbid.nativead.api.HBNativeAdView;
 import com.hyperbid.nativead.api.NativeAd;

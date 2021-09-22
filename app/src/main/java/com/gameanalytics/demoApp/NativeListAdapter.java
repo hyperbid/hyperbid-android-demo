@@ -6,7 +6,7 @@
  *
  */
 
-package com.gameanalytics.hyperbid_android_demo;
+package com.gameanalytics.demoApp;
 
 import android.util.Log;
 import android.view.LayoutInflater;

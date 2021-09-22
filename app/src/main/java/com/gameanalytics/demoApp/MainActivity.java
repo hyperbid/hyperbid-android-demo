@@ -6,7 +6,7 @@
  */
 
 
-package com.gameanalytics.hyperbid_android_demo;
+package com.gameanalytics.demoApp;
 
 import static android.app.Application.getProcessName;
 
@@ -30,8 +30,8 @@ import com.hyperbid.core.api.NetTrafficeCallback;
 public class MainActivity extends AppCompatActivity {
 
     static final String _tag    = "hyperbid_main_activity";
-    static final String _appid  = "a5aa1f9deda26d";
-    static final String _appKey = "4f7b9ac17decb9babec83aac078742c7";
+    static final String _appid  = "a60948274823ff";
+    static final String _appKey = "dcd2834dba9ffd7d654cc8859174070e";
 
     static final String _appChannel     = "testChannel";
     static final String _appSubChannel  = "testSubChannel";
@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
             MultipleFormatLoadActivity.class
     };
 
-    boolean _hasHyperBidInitialized = false; //
-    boolean _hasGdprBeenAccepted    = false; // will hold the value
+    boolean _hasHyperBidInitialized = false; // true if the sdk was initialized
+    boolean _hasGdprBeenAccepted    = false; // true if the gdpr check has been done
 
     protected void setDataDirectory() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
@@ -127,14 +127,15 @@ public class MainActivity extends AppCompatActivity {
         message += "HyperBid Version: " + HBSDK.getVersion() + '\n';
         message += "App Id: "  + _appid + '\n';
         message += "App Key: " + _appKey + '\n';
-        message += "China Build: " + HBSDK.isCnSDK() + '\n';
-        message += "GDPR policy: " + getGDPRString(HBSDK.getGDPRLevel(MainActivity.this)) + '\n';
+        message += "Is China Build: " + HBSDK.isCnSDK() + '\n';
+        message += "GDPR policy: " + getGDPRString(HBSDK.getGDPRLevel(this)) + '\n';
         message += "Is EU user: " + HBSDK.isEUTraffic(this) + '\n';
-        message += "Debug log: " +HBSDK.isLogDebug();
+        message += "Debug log enabled: " + HBSDK.isLogDebug();
 
         new AlertDialog.Builder(this)
                 .setTitle("Details")
                 .setMessage(message)
+                .setPositiveButton("OK", null)
                 .create()
                 .show();
     }
@@ -195,8 +196,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(_hasHyperBidInitialized) {
                     new AlertDialog.Builder(MainActivity.this)
-                            .setTitle("Warning")
-                            .setMessage("HyperBid was already initialized!")
+                            .setTitle(R.string.already_init_title)
+                            .setMessage(R.string.already_init_message)
                             .setPositiveButton("OK", null)
                             .create()
                             .show();
