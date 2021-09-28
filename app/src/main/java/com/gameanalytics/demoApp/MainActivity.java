@@ -42,10 +42,7 @@ public class MainActivity extends AppCompatActivity {
     static final int SPLASH_AD_ID          = 3;
     static final int NATIVE_AD_ID          = 4;
     static final int NATIVE_BANNER_ID      = 5;
-    static final int NATIVE_SPLASH_ID      = 6;
-    static final int NATIVE_LIST_ID        = 7;
-    static final int MULTIPLE_FORMAT_ID    = 8;
-    static final int ALL_ENTRIES           = 9;
+    static final int ALL_ENTRIES           = 6;
 
     static final String[] _names = new String[] {
             "Banner Ad Sample",
@@ -54,9 +51,6 @@ public class MainActivity extends AppCompatActivity {
             "Splash Ad",
             "Native Ad",
             "Native Banner",
-            "Native Splash",
-            "Native List",
-            "Multiple Format"
     };
 
     static final Class[] _activities = new Class[] {
@@ -66,9 +60,6 @@ public class MainActivity extends AppCompatActivity {
             SplashAdActivity.class,
             NativeAdActivity.class,
             NativeBannerActivity.class,
-            NativeSplashActivity.class,
-            NativeListActivity.class,
-            MultipleFormatLoadActivity.class
     };
 
     boolean _hasHyperBidInitialized = false; // true if the sdk was initialized
