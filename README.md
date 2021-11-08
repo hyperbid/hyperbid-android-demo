@@ -1,4 +1,4 @@
-<h1>HyperBid Unity Demo</h1>
+<h1>HyperBid Android Demo</h1>
 <p>HyperBid is a complete mediation solution for Android and iOS games. It offers support for a large selection of ad providers and uses header bidding to help developers maximize their revenue from ads using header bidding.</p>
 <li>dashboard: <a href="https://app.hyperbid.com">https://app.hyperbid.com</a></li>
 <li>documentation: <a href="https://docs.hyperbid.com">https://docs.hyperbid.com</a></li>
