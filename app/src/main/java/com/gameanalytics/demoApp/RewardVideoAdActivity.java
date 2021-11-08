@@ -8,6 +8,7 @@
 package com.gameanalytics.demoApp;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,6 +21,7 @@ import com.hyperbid.core.api.HBAdConst;
 import com.hyperbid.core.api.HBAdInfo;
 import com.hyperbid.core.api.HBAdStatusInfo;
 import com.hyperbid.core.api.AdError;
+import com.hyperbid.core.api.HBNetworkConfirmInfo;
 import com.hyperbid.rewardvideo.api.HBRewardVideoAd;
 import com.hyperbid.rewardvideo.api.HBRewardVideoExListener;
 
@@ -78,6 +80,11 @@ public class RewardVideoAdActivity extends Activity {
             @Override
             public void onDeeplinkCallback(HBAdInfo adInfo, boolean isSuccess) {
                 Log.i(TAG, "onDeeplinkCallback:" + adInfo.toString() + "--status:" + isSuccess);
+            }
+
+            @Override
+            public void onDownloadConfirm(Context context, HBAdInfo hbAdInfo, HBNetworkConfirmInfo hbNetworkConfirmInfo) {
+                Log.i(TAG, "onDownloadConfirm");
             }
 
             @Override

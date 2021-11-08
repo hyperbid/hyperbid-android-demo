@@ -8,6 +8,7 @@
 package com.gameanalytics.demoApp;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,8 +19,10 @@ import com.hyperbid.core.api.HBAdConst;
 import com.hyperbid.core.api.HBAdInfo;
 import com.hyperbid.core.api.HBAdStatusInfo;
 import com.hyperbid.core.api.AdError;
+import com.hyperbid.core.api.HBNetworkConfirmInfo;
 import com.hyperbid.splashad.api.HBSplashAd;
 import com.hyperbid.splashad.api.HBSplashExListener;
+import com.hyperbid.splashad.api.IHBSplashEyeAd;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -87,9 +90,19 @@ public class SplashAdShowInCurrentActivity extends Activity {
             }
 
             @Override
-            public void onAdLoaded() {
+            public void onDownloadConfirm(Context context, HBAdInfo hbAdInfo, HBNetworkConfirmInfo hbNetworkConfirmInfo) {
+                Log.i(TAG, "onDownloadConfirm");
+            }
+
+            @Override
+            public void onAdLoaded(boolean b) {
                 Log.i(TAG, "onAdLoaded---------");
                 Toast.makeText(SplashAdShowInCurrentActivity.this, "onAdLoaded", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onAdLoadTimeout() {
+                Log.i(TAG, "onAdLoadTimeout");
             }
 
             @Override
@@ -115,7 +128,7 @@ public class SplashAdShowInCurrentActivity extends Activity {
             }
 
             @Override
-            public void onAdDismiss(HBAdInfo entity) {
+            public void onAdDismiss(HBAdInfo entity, IHBSplashEyeAd ihbSplashEyeAd) {
                 Log.i(TAG, "onAdDismiss---------:" + entity.toString());
                 Toast.makeText(SplashAdShowInCurrentActivity.this, "onAdDismiss", Toast.LENGTH_SHORT).show();
                 if (container != null) {

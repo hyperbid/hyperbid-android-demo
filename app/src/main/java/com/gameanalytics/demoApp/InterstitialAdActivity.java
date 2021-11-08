@@ -8,6 +8,7 @@
 package com.gameanalytics.demoApp;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,6 +20,7 @@ import android.widget.Toast;
 import com.hyperbid.core.api.HBAdInfo;
 import com.hyperbid.core.api.HBAdStatusInfo;
 import com.hyperbid.core.api.AdError;
+import com.hyperbid.core.api.HBNetworkConfirmInfo;
 import com.hyperbid.interstitial.api.HBInterstitial;
 import com.hyperbid.interstitial.api.HBInterstitialExListener;
 
@@ -67,6 +69,11 @@ public class InterstitialAdActivity extends Activity {
             @Override
             public void onDeeplinkCallback(HBAdInfo adInfo, boolean isSuccess) {
                 Log.i(TAG, "onDeeplinkCallback:" + adInfo.toString() + "--status:" + isSuccess);
+            }
+
+            @Override
+            public void onDownloadConfirm(Context context, HBAdInfo hbAdInfo, HBNetworkConfirmInfo hbNetworkConfirmInfo) {
+                Log.i(TAG, "onDownloadConfirm");
             }
 
             @Override

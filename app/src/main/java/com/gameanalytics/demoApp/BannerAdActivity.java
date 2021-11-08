@@ -8,6 +8,7 @@
 package com.gameanalytics.demoApp;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -21,6 +22,7 @@ import com.hyperbid.banner.api.HBBannerExListener;
 import com.hyperbid.banner.api.HBBannerView;
 import com.hyperbid.core.api.HBAdInfo;
 import com.hyperbid.core.api.AdError;
+import com.hyperbid.core.api.HBNetworkConfirmInfo;
 import com.hyperbid.network.admob.AdmobHBConst;
 
 import java.util.HashMap;
@@ -52,6 +54,11 @@ public class BannerAdActivity extends Activity {
             @Override
             public void onDeeplinkCallback(boolean isRefresh, HBAdInfo adInfo, boolean isSuccess) {
                 Log.i(TAG, "onDeeplinkCallback:" + adInfo.toString() + "--status:" + isSuccess);
+            }
+
+            @Override
+            public void onDownloadConfirm(Context context, HBAdInfo hbAdInfo, HBNetworkConfirmInfo hbNetworkConfirmInfo) {
+                Log.i(TAG, "onDownloadConfirm");
             }
 
             @Override
