@@ -39,27 +39,24 @@ public class MainActivity extends AppCompatActivity {
     static final int BANNER_AD_ID          = 0;
     static final int INTERSTITIAL_AD_ID    = 1;
     static final int REWARDED_VIDEO_ID     = 2;
-    static final int SPLASH_AD_ID          = 3;
-    static final int NATIVE_AD_ID          = 4;
-    static final int NATIVE_BANNER_ID      = 5;
-    static final int ALL_ENTRIES           = 6;
+    static final int ALL_ENTRIES           = 3;
 
     static final String[] _names = new String[] {
             "Banner Ad Sample",
             "Interstitial Ad",
             "Rewarded Video",
-            "Splash Ad",
-            "Native Ad",
-            "Native Banner",
+            //"Splash Ad",
+            //"Native Ad",
+            //"Native Banner",
     };
 
     static final Class[] _activities = new Class[] {
             BannerAdActivity.class,
             InterstitialAdActivity.class,
             RewardVideoAdActivity.class,
-            SplashAdActivity.class,
-            NativeAdActivity.class,
-            NativeBannerActivity.class,
+            //SplashAdActivity.class,
+            //NativeAdActivity.class,
+            //NativeBannerActivity.class,
     };
 
     boolean _hasHyperBidInitialized = false; // true if the sdk was initialized
