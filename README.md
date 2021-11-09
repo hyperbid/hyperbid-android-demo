@@ -5,7 +5,7 @@
 <br/>
 <h1>Android Support</h1>
 <p>HyperBid provides android support via the HyperBid Android SDK written in java. You can find more info about it in the link below:</p>
-<li>documentation: <a href="https://docs.hyperbid.com/#/en-us/android">https://docs.hyperbid.com/#/en-us/android</a></li>
+<li>documentation: <a href="https://docs.hyperbid.com/#/en-us/android/GetStarted/HyperBid_Get_Started">https://docs.hyperbid.com/#/en-us/android/GetStarted/HyperBid_Get_Started</a></li>
 <br/>
 <h2>Running the demo</h2>
 
