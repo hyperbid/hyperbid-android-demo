@@ -88,6 +88,31 @@ public class RewardVideoAdActivity extends Activity {
             }
 
             @Override
+            public void onRewardedVideoAdAgainPlayStart(HBAdInfo hbAdInfo) {
+
+            }
+
+            @Override
+            public void onRewardedVideoAdAgainPlayEnd(HBAdInfo hbAdInfo) {
+
+            }
+
+            @Override
+            public void onRewardedVideoAdAgainPlayFailed(AdError adError, HBAdInfo hbAdInfo) {
+
+            }
+
+            @Override
+            public void onRewardedVideoAdAgainPlayClicked(HBAdInfo hbAdInfo) {
+
+            }
+
+            @Override
+            public void onAgainReward(HBAdInfo hbAdInfo) {
+
+            }
+
+            @Override
             public void onRewardedVideoAdLoaded() {
                 Log.i(TAG, "onRewardedVideoAdLoaded");
                 Toast.makeText(RewardVideoAdActivity.this, "onRewardedVideoAdLoaded", Toast.LENGTH_SHORT).show();
