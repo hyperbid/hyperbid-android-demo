@@ -10,7 +10,7 @@
 
     <item>
         <shape>
-            <stroke android:width="@dimen/hyperbid_1dp" android:color="@color/hyperbid_0042DF"/>
+            <stroke android:width="@dimen/hyperbid_1dp" android:color="@color/purple_200"/>
             <solid android:color="@color/white"/>
             <corners android:radius="4dp"/>
         </shape>

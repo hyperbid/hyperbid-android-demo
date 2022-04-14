@@ -26,7 +26,7 @@
 
     <style name="style_checkBox" parent="Theme.AppCompat.Light">
         <item name="colorControlNormal">@color/hyperbid_666666</item>
-        <item name="colorControlActivated">@color/hyperbid_0042DF</item>
+        <item name="colorControlActivated">@color/purple_200</item>
     </style>
 
 </resources>

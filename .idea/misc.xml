@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/drawable-v24/bg_btn_normal.xml" value="0.1671875" />
         <entry key="app/src/main/res/drawable-v24/bg_btn_pressed.xml" value="0.1671875" />
         <entry key="app/src/main/res/drawable-v24/bg_white_selected.xml" value="0.1671875" />
+        <entry key="app/src/main/res/drawable-v24/selector_bg_1.xml" value="0.1671875" />
         <entry key="app/src/main/res/drawable-v24/selector_btn.xml" value="0.1671875" />
         <entry key="app/src/main/res/drawable-v24/shape_gray_width1_corners2.xml" value="0.1671875" />
         <entry key="app/src/main/res/drawable-xhdpi/sample_view.xml" value="0.21354166666666666" />
@@ -34,7 +35,7 @@
         <entry key="app/src/main/res/layout/activity_splash_ad_show_in_current.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/activity_video.xml" value="0.1" />
         <entry key="app/src/main/res/layout/background_main.xml" value="0.19739583333333333" />
-        <entry key="app/src/main/res/layout/include_btn.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/include_btn.xml" value="0.26274597955543333" />
         <entry key="app/src/main/res/layout/include_select_network.xml" value="0.12952898550724637" />
         <entry key="app/src/main/res/layout/include_title_bar.xml" value="0.12952898550724637" />
         <entry key="app/src/main/res/layout/layout_window_info.xml" value="0.13925327951564076" />
