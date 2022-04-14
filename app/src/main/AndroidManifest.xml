@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gameanalytics.demoApp">
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 
     <application
         android:allowBackup="true"
@@ -8,8 +9,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-
-        android:theme="@style/Theme.Hyperbid_android_demo">
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/Theme.Hyperbid_android_demo"
+        android:usesCleartextTraffic="true"
+        >
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
@@ -21,7 +24,9 @@
 
         <activity
             android:name="com.gameanalytics.demoApp.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

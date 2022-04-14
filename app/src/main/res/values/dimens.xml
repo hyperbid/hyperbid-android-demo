@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright © 2018-2020 TopOn. All rights reserved.
+  ~ https://www.toponad.com
+  ~ Licensed under the TopOn SDK License Agreement
+  ~ https://github.com/toponteam/TopOn-Android-SDK/blob/master/LICENSE
+  -->
+
+<resources>
+    <dimen name="hyperbid_pic_size">100dp</dimen>
+    <dimen name="hyperbid_pic_width">42dp</dimen>
+    <dimen name="hyperbid_pic_height">74dp</dimen>
+    <dimen name="hyperbid_format_pic_height">165dp</dimen>
+    <dimen name="hyperbid_title_margin_left">12dp</dimen>
+    <dimen name="hyperbid_title_margin_top">16dp</dimen>
+    <dimen name="hyperbid_desc_margin_top">8dp</dimen>
+    <dimen name="hyperbid_padding">12dp</dimen>
+    <dimen name="hyperbid_padding_5dp">5dp</dimen>
+    <dimen name="hyperbid_text_size_12">12sp</dimen>
+    <dimen name="hyperbid_title_size">13sp</dimen>
+    <dimen name="hyperbid_desc_size">11sp</dimen>
+    <dimen name="hyperbid_title_bar_text_size">17sp</dimen>
+    <dimen name="hyperbid_button_size">14sp</dimen>
+    <dimen name="hyperbid_line_width">2dp</dimen>
+    <dimen name="hyperbid_line_height">12dp</dimen>
+
+    <dimen name="hyperbid_1dp">1dp</dimen>
+    <dimen name="hyperbid_2dp">2dp</dimen>
+    <dimen name="hyperbid_6dp">6dp</dimen>
+    <dimen name="hyperbid_7dp">7dp</dimen>
+    <dimen name="hyperbid_8dp">8dp</dimen>
+    <dimen name="hyperbid_10dp">10dp</dimen>
+    <dimen name="hyperbid_11dp">11dp</dimen>
+    <dimen name="hyperbid_12dp">12dp</dimen>
+    <dimen name="hyperbid_13dp">13dp</dimen>
+    <dimen name="hyperbid_14dp">14dp</dimen>
+    <dimen name="hyperbid_18dp">18dp</dimen>
+    <dimen name="hyperbid_20dp">20dp</dimen>
+    <dimen name="hyperbid_21dp">21dp</dimen>
+    <dimen name="hyperbid_27dp">27dp</dimen>
+    <dimen name="hyperbid_35dp">35dp</dimen>
+    <dimen name="hyperbid_45dp">45dp</dimen>
+    <dimen name="hyperbid_60dp">60dp</dimen>
+    <dimen name="hyperbid_95dp">95dp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+</resources>

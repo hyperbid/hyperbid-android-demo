@@ -10,7 +10,7 @@ package com.gameanalytics.demoApp;
 
 public class PlacementId {
 
-    public static final String NATIVE_BANNER_ID     = "b6125eb849fd18";
+    public static final String NATIVE_BANNER_ID     = "b5aa1fa5d10190";
     public static final String NATIVE_SPLASH_ID     = "b6137609524740";//"b6125ed179ee63";
     public static final String REWARDED_VIDEO_ID    = "b609482b1a6f29";
     public static final String BANNER_AD_ID         = "b60ac5774d0b51";

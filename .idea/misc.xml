@@ -3,28 +3,47 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.31979166666666664" />
+        <entry key="app/src/main/res/drawable-v24/bg_btn_device_id.xml" value="0.3078125" />
+        <entry key="app/src/main/res/drawable-v24/bg_btn_normal.xml" value="0.1671875" />
+        <entry key="app/src/main/res/drawable-v24/bg_btn_pressed.xml" value="0.1671875" />
+        <entry key="app/src/main/res/drawable-v24/bg_white_selected.xml" value="0.1671875" />
+        <entry key="app/src/main/res/drawable-v24/selector_btn.xml" value="0.1671875" />
+        <entry key="app/src/main/res/drawable-v24/shape_gray_width1_corners2.xml" value="0.1671875" />
         <entry key="app/src/main/res/drawable-xhdpi/sample_view.xml" value="0.21354166666666666" />
         <entry key="app/src/main/res/drawable/background_main.xml" value="0.21354166666666666" />
         <entry key="app/src/main/res/drawable/entry_button.xml" value="0.21354166666666666" />
         <entry key="app/src/main/res/drawable/entry_shape.xml" value="0.21354166666666666" />
         <entry key="app/src/main/res/drawable/entry_shape_pressed.xml" value="0.21354166666666666" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.21354166666666666" />
+        <entry key="app/src/main/res/layout-land/activity_interstitial.xml" value="0.10989492119089317" />
+        <entry key="app/src/main/res/layout-land/include_btn.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout-land/include_log_area.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout-land/include_select_network.xml" value="0.14895833333333333" />
+        <entry key="app/src/main/res/layout-land/include_title_bar.xml" value="0.14895833333333333" />
         <entry key="app/src/main/res/layout-land/sample_view_entry.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/activity_banner.xml" value="0.13489583333333333" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_interstitial.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_multiple_format_load.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_native.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_native.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_native_banner.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/activity_native_list.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/activity_native_splash.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/activity_splash_ad_show_in_current.xml" value="0.19739583333333333" />
-        <entry key="app/src/main/res/layout/activity_video.xml" value="0.11979166666666667" />
+        <entry key="app/src/main/res/layout/activity_video.xml" value="0.1" />
         <entry key="app/src/main/res/layout/background_main.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/include_btn.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/include_select_network.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/include_title_bar.xml" value="0.12952898550724637" />
+        <entry key="app/src/main/res/layout/layout_window_info.xml" value="0.13925327951564076" />
         <entry key="app/src/main/res/layout/native_ad_item.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/native_list_ad_item.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/native_list_data_item.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/layout/native_list_more_item.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/native_video_button_item.xml" value="0.1286231884057971" />
+        <entry key="app/src/main/res/layout/reward_ad_layout.xml" value="0.12952898550724637" />
         <entry key="app/src/main/res/layout/sample_view_entry.xml" value="0.12447916666666667" />
         <entry key="app/src/main/res/layout/splash_ad_show.xml" value="0.19739583333333333" />
       </map>

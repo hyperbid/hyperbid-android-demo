@@ -14,12 +14,11 @@
 
     <LinearLayout
         android:id="@+id/logo_area"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
         android:padding="20dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center"
         >
         <ImageView
@@ -41,6 +40,6 @@
         android:id="@+id/splash_ad_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/logo_area"></FrameLayout>
+        android:layout_toLeftOf="@id/logo_area"></FrameLayout>
 
 </RelativeLayout>

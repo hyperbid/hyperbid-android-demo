@@ -21,6 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/title_bar"
+        android:layout_marginTop="0dp"
         android:padding="@dimen/hyperbid_padding">
 
         <RelativeLayout
@@ -34,8 +35,8 @@
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/hyperbid_text_size_12"
-                android:src="@mipmap/ic_test_splash" />
+                android:layout_marginTop="@dimen/text_size_12"
+                android:src="@mipmap/iv_rewarded_video" />
 
             <TextView
                 android:id="@+id/tv_format"
@@ -45,9 +46,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/hyperbid_10dp"
                 android:layout_marginBottom="@dimen/hyperbid_10dp"
-                android:text="@string/hyperbid_title_splash"
-                android:textColor="@color/hyperbid_666666"
-                android:textSize="@dimen/hyperbid_desc_size" />
+                android:text="@string/hyperbid_title_rewarded_video"
+                android:textSize="@dimen/hyperbid_title_size" />
 
         </RelativeLayout>
 
