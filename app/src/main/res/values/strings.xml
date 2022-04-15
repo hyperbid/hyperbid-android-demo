@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">hyperbid_android_demo</string>
+    <string name="app_name">HyperBid Sdk Demo</string>
     <string name="already_init_title">Warning</string>
     <string name="already_init_message">"HyperBid was already initialized!"</string>
     <string name="gdpr_personalized">personalized</string>
@@ -30,6 +30,6 @@
     <string name="hyperbid_select_network">Select Network</string>
 
     <string name="hyperbid_click_to_copy_device_id">Copy AndroidID: %s</string>
-    <string name="hyperbid_sdk_version">TopOn SDK: %s</string>
+    <string name="hyperbid_sdk_version">HyperBid SDK: %s</string>
 
 </resources>

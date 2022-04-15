@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright © 2018-2020 TopOn. All rights reserved.
-  ~ https://www.toponad.com
-  ~ Licensed under the TopOn SDK License Agreement
-  ~ https://github.com/toponteam/TopOn-Android-SDK/blob/master/LICENSE
+  ~ Copyright © 2018-2020 HyperBid. All rights reserved.
+  ~ https://www.HyperBidad.com
+  ~ Licensed under the HyperBid SDK License Agreement
+  ~ https://github.com/HyperBidteam/HyperBid-Android-SDK/blob/master/LICENSE
   -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -12,7 +12,7 @@
     android:layout_height="match_parent"
     android:background="@color/hyperbid_F5F5F5">
 
-    <com.gameanalytics.demoApp.TitleBar
+    <com.HyperBid.demoApp.TitleBar
         android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/hyperbid_45dp"/>
