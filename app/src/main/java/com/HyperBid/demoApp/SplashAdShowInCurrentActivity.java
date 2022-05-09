@@ -21,6 +21,7 @@ import com.hyperbid.core.api.HBAdStatusInfo;
 import com.hyperbid.core.api.AdError;
 import com.hyperbid.core.api.HBNetworkConfirmInfo;
 import com.hyperbid.splashad.api.HBSplashAd;
+import com.hyperbid.splashad.api.HBSplashAdExtraInfo;
 import com.hyperbid.splashad.api.HBSplashExListener;
 import com.hyperbid.splashad.api.IHBSplashEyeAd;
 
@@ -128,14 +129,16 @@ public class SplashAdShowInCurrentActivity extends Activity {
             }
 
             @Override
-            public void onAdDismiss(HBAdInfo entity, IHBSplashEyeAd ihbSplashEyeAd) {
-                Log.i(TAG, "onAdDismiss---------:" + entity.toString());
+            public void onAdDismiss(HBAdInfo hbAdInfo, HBSplashAdExtraInfo hbSplashAdExtraInfo) {
+               // Log.i(TAG, "onAdDismiss---------:" + entity.toString());
                 Toast.makeText(SplashAdShowInCurrentActivity.this, "onAdDismiss", Toast.LENGTH_SHORT).show();
                 if (container != null) {
                     container.removeAllViews();
                     container.setVisibility(View.GONE);
                 }
             }
+
+
 
         }, 5000);
     }

@@ -51,8 +51,8 @@ import java.util.Map;
 public class MainActivity extends Activity {
 
     static final String _tag    = "hyperbid_main_activity";
-    static final String _appid  = "a5aa1f9deda26d";
-    static final String _appKey = "4f7b9ac17decb9babec83aac078742c7";
+    static final String _appid  = "a619103bfcbc53";
+    static final String _appKey = "d2444c20595ecf22cc12d7fbe0c77b43";
 
     static final String _appChannel     = "testChannel";
     static final String _appSubChannel  = "testSubChannel";

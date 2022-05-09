@@ -206,9 +206,11 @@ public class BannerAdActivity extends Activity {
             }
 
             @Override
-            public void onAdSourceAttemp(HBAdInfo hbAdInfo) {
+            public void onAdSourceAttempt(HBAdInfo hbAdInfo) {
 
             }
+
+
 
             @Override
             public void onAdSourceLoadFilled(HBAdInfo adInfo) {

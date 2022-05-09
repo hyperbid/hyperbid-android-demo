@@ -26,6 +26,7 @@ import com.hyperbid.core.api.AdError;
 import com.hyperbid.core.api.HBAdInfo;
 import com.hyperbid.core.api.HBNetworkConfirmInfo;
 import com.hyperbid.splashad.api.HBSplashAd;
+import com.hyperbid.splashad.api.HBSplashAdExtraInfo;
 import com.hyperbid.splashad.api.HBSplashExListener;
 import com.hyperbid.splashad.api.IHBSplashEyeAd;
 
@@ -213,7 +214,7 @@ public class SplashAdActivity extends Activity implements HBSplashExListener {
     }
 
     @Override
-    public void onAdDismiss(HBAdInfo hbAdInfo, IHBSplashEyeAd ihbSplashEyeAd) {
+    public void onAdDismiss(HBAdInfo hbAdInfo, HBSplashAdExtraInfo hbSplashAdExtraInfo) {
 
     }
 

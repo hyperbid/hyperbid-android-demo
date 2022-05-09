@@ -225,7 +225,7 @@ public class InterstitialAdActivity extends Activity {
             @Override
             public void onInterstitialAdLoaded() {
                 Log.i(TAG, "onInterstitialAdLoaded");
-                ViewUtil.printLog(tvShowLog,"onInterstitialAdLoaded");
+                ViewUtil.printLog(tvShowLog,"onInterstitialAdLoaded:"+placementId);
             }
 
             @Override
@@ -292,7 +292,7 @@ public class InterstitialAdActivity extends Activity {
             }
 
             @Override
-            public void onAdSourceAttemp(HBAdInfo hbAdInfo) {
+            public void onAdSourceAttempt(HBAdInfo hbAdInfo) {
 
             }
 

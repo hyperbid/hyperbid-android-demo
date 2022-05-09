@@ -23,6 +23,7 @@ import com.hyperbid.core.api.HBMediationRequestInfo;
 import com.hyperbid.core.api.AdError;
 import com.hyperbid.core.api.HBNetworkConfirmInfo;
 import com.hyperbid.splashad.api.HBSplashAd;
+import com.hyperbid.splashad.api.HBSplashAdExtraInfo;
 import com.hyperbid.splashad.api.HBSplashExListener;
 import com.hyperbid.splashad.api.IHBSplashEyeAd;
 
@@ -91,6 +92,11 @@ public class SplashAdShowActivity extends Activity implements HBSplashExListener
     }
 
     @Override
+    public void onAdDismiss(HBAdInfo hbAdInfo, HBSplashAdExtraInfo hbSplashAdExtraInfo) {
+
+    }
+
+    @Override
     public void onDeeplinkCallback(HBAdInfo adInfo, boolean isSuccess) {
         Log.i(TAG, "onDeeplinkCallback:" + adInfo.toString() + "--status:" + isSuccess);
     }
@@ -127,11 +133,7 @@ public class SplashAdShowActivity extends Activity implements HBSplashExListener
         Log.i(TAG, "onAdClick:\n" + entity.toString());
     }
 
-    @Override
-    public void onAdDismiss(HBAdInfo hbAdInfo, IHBSplashEyeAd ihbSplashEyeAd) {
-        Log.i(TAG, "onAdDismiss:\n");
-        jumpToMainActivity();
-    }
+
 
     boolean hasHandleJump = false;
 
